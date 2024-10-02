@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remover Objeto JSON</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">LIMPEZA IPVANISH</h1>
+        <div class="form-group">
+            <center><label for="jsonInput">Coloque suas proxy aqui:</label></center>
+            <textarea id="jsonInput" class="form-control" placeholder="Cole seu JSON aqui..." rows="10"></textarea>
+        </div>
+        <button id="processButton" class="btn btn-primary btn-block mb-4">Processar e Mostrar Resultados</button>
+        
+        <h2 class="mt-4">Ou selecione um arquivo .txt:</h2>
+        <div class="form-group">
+            <input type="file" id="fileInput" class="form-control-file" accept=".txt">
+        </div>
+        <button id="loadFileButton" class="btn btn-secondary btn-block mb-4">Limpeza</button>
+        
+        <h2 class="mt-4">Resultados:</h2>
+        <pre id="resultOutput" class="bg-light p-3 border"></pre>
+        <button id="copyButton" class="btn btn-success btn-block">Copiar Resultados</button>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional for this project) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
